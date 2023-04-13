@@ -23,25 +23,25 @@ onMounted(() => {
 <template>
 <div class="fixed w-full h-screen bg-black">
   <div v-if="!showFullVideo" id="SideNav" class="flex z-40 items-center w-[120px] h-screen bg-black relative">
-    <img class="absolute top-0 w-[35px] mt-10 ml-10" src="/images/netflix-logo.png">
-    <div>
+    <img class="absolute top-0 w-[35px] mt-5 ml-10" src="/images/netflix-logo.png">
+    <div class="mt-20">
       <div class="py-2 mx-10 my-6">
-        <Magnify fillColor="#FFFFFF" :size="40" class="cursor-pointer" />
+        <Magnify fillColor="#FFFFFF" :size="35" class="cursor-pointer" />
       </div>
       <div class="py-2 mx-10 my-6 border-b-4 border-b-red-500">
-        <HomeOutline fillColor="#FFFFFF" :size="40" class="cursor-pointer" />
+        <HomeOutline fillColor="#FFFFFF" :size="35" class="cursor-pointer" />
       </div>
       <div class="py-2 mx-10 my-6">
-        <TrendingUp fillColor="#FFFFFF" :size="40" class="cursor-pointer" />
+        <TrendingUp fillColor="#FFFFFF" :size="35" class="cursor-pointer" />
       </div>
       <div class="py-2 mx-10 my-6">
-        <Television fillColor="#FFFFFF" :size="40" class="cursor-pointer" />
+        <Television fillColor="#FFFFFF" :size="35" class="cursor-pointer" />
       </div>
       <div class="py-2 mx-10 my-6">
-        <MovieOutline fillColor="#FFFFFF" :size="40" class="cursor-pointer" />
+        <MovieOutline fillColor="#FFFFFF" :size="35" class="cursor-pointer" />
       </div>
       <div class="py-2 mx-10 my-6">
-        <Plus fillColor="#FFFFFF" :size="40" class="cursor-pointer" />
+        <Plus fillColor="#FFFFFF" :size="35" class="cursor-pointer" />
       </div>
     </div>
   </div>
