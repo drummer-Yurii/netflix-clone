@@ -65,6 +65,20 @@ onMounted(() => {
       </div>
     </div>
 
-    <div class="absolute z-20 h-[70%] left-[120px] w-[100%] right-0 bottom-0 bg-gradient-to-t from-black via-black" />
+    <div v-if="!showFullVideo" class="absolute z-20 h-[70%] left-[120px] w-[100%] right-0 bottom-0 bg-gradient-to-t from-black via-black" />
+    
+    <div v-if="showFullVideo">
+      <div @click="showFullVideo = false" class="absolute z-50 p-2 m-4 bg-white bg-opacity-50 rounded-full cursor-pointer">
+        <ChevronLeft fillColor="#FFFFFF" :size="40" />
+      </div>
+      <video
+        v-if="movie" 
+        :src="'/videos/' + movie.name + '.mp4'" 
+        autoplay 
+        loop
+        controls
+        class="absolute z-0 w-[100vw] h-full object-fit" 
+      />
+    </div>
   </div>
 </template>
